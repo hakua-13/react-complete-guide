@@ -20,4 +20,10 @@ it('should have h1 tag', () => {
 
   const h2El = container.querySelector('h2');
   debug(h2El);
+
+  const elByLabel = screen.getByLabelText('氏名');
+  debug(elByLabel);
+
+  const elByPlaceholder = screen.getByPlaceholderText('氏名');
+  debug(elByPlaceholder);
 })
