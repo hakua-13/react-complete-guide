@@ -1,9 +1,14 @@
-import { FC } from 'react';
+import { FC } from "react";
 
-import { Hello } from './Hello';
- 
+import { Btn, Hello } from "./Hello";
+
 const Example: FC = () => {
-    return <Hello/>
+  return (
+    <>
+      <Hello text="hello">children!!</Hello>
+      <Btn fn={(text) => console.log("hello", text)} />
+    </>
+  );
 };
 
 export default Example;
